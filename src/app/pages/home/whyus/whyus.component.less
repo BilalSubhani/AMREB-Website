@@ -1,0 +1,272 @@
+@primary-color: #1b175e;
+@secondary-color: #456096;
+@text-color: #737589;
+@btn-color: #7dbee3;
+@light-bg: #fff;
+@transition-speed: 0.3s;
+@border-radius: 30px;
+@font-family: "Inter", sans-serif;
+
+.whyUs {
+  font-family: @font-family;
+  background-color: @light-bg;
+  padding: 2rem 2rem 0;
+  line-height: 1.6;
+  margin: 80px auto;
+}
+
+.why-us-container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+.why-us-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  h1 {
+    font-size: 32px;
+    color: @primary-color;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    // transform: translateY(100px);
+    transition: 1.5s;
+    // opacity: 0;
+  }
+
+  h1.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+// .why-us-card.expertise-card,
+// .why-us-card.market-card,
+// .why-us-card.service-card,
+// .why-us-card.security-card,
+// .why-us-card.efficiency-card,
+// .why-us-card.support-card {
+//   transform: translateY(100px);
+//   transition: 1.5s;
+//   opacity: 0;
+// }
+
+.why-us-card.expertise-card.show,
+.why-us-card.market-card.show,
+.why-us-card.service-card.show,
+.why-us-card.security-card.show,
+.why-us-card.efficiency-card.show,
+.why-us-card.support-card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.why-us-card {
+  padding: 2rem 1rem;
+  border-radius: @border-radius;
+}
+
+.expertise-card {
+  background-color: #005840;
+  color: white;
+  height: 535px;
+  width: 610px;
+  padding: 50px;
+  grid-row: span 2;
+
+  h2 {
+    color: #9dff91;
+    font-size: 40px;
+    line-height: normal;
+    margin-left: 16px;
+    margin-bottom: 5.4rem;
+    font-weight: 400;
+    margin-top: 25px;
+    // transform: translateY(100px);
+    // transition: 1.5s;
+    // opacity: 0;
+  }
+
+  p {
+    margin-left: 18px;
+    font-size: 18px;
+    // transform: translateY(100px);
+    // transition: 1.5s;
+    // opacity: 0;
+  }
+}
+
+.market-card {
+  background-color: #bae6fd;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #007982;
+    margin-bottom: 0.5rem;
+    //   transform: translateY(100px);
+    //   transition: 1.5s;
+    //   opacity: 0;
+  }
+
+  p {
+    color: #007982;
+    font-size: 1rem;
+    //   transform: translateY(100px);
+    //   transition: 1.5s;
+    //   opacity: 0;
+  }
+}
+
+.service-card {
+  background-color: #fcd34d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 6px;
+  height: 240px;
+}
+
+.security-card {
+  margin-top: 2px;
+  height: 265px;
+  background-color: #fecdd3;
+  padding: 2.5rem;
+  padding-left: 70px;
+  grid-column: 1 / -1;
+  font-size: 20px;
+  color: #704f5b;
+
+  //   p {
+  //     transform: translateY(100px);
+  //     transition: 1.5s;
+  //     opacity: 0;
+  //   }
+
+  em {
+    font-style: italic;
+    color: #704f5b;
+  }
+}
+
+.efficiency-card {
+  background-color: #bae6fd;
+  padding: 2rem;
+  padding-left: 70px;
+  color: #007982;
+  font-size: 25px;
+  transform: translateY(-10px);
+
+  em {
+    font-style: italic;
+  }
+}
+
+.support-card {
+  background-color: #005940;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-10px);
+
+  h2 {
+    color: #9dff91;
+    font-size: 50px;
+    font-weight: 400;
+    // transform: translateY(100px);
+    // transition: 1.5s;
+    // opacity: 0;
+  }
+
+  p {
+    font-weight: 400;
+    color: #9dff91;
+    // transform: translateY(100px);
+    // transition: 1.5s;
+    // opacity: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .whyUs {
+    padding: 1rem 0 0;
+  }
+
+  .why-us-header {
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .expertise-card {
+    width: calc(92% - 2rem);
+    height: auto;
+    padding: 2rem;
+    grid-row: auto;
+  }
+
+  .expertise-card h2 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+
+  .expertise-card p {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .market-card,
+  .service-card {
+    height: 200px;
+  }
+
+  .stats-number {
+    font-size: 80px;
+  }
+
+  .security-card {
+    height: auto;
+    padding: 2rem;
+    font-size: 32px;
+  }
+
+  .efficiency-card {
+    padding: 2rem;
+    font-size: 24px;
+    transform: none;
+  }
+
+  .support-card {
+    transform: none;
+  }
+
+  .support-number {
+    font-size: 56px;
+  }
+}
