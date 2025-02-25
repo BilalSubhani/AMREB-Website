@@ -1,0 +1,23 @@
+Base/Background:
+#ebecf1 – Use this as your main background color. Its light, neutral tone will keep the site feeling open and clean.
+
+Primary Accent (CTAs, Links):
+#7dbee3 – This vibrant blue is perfect for buttons, links, and other elements that you want to draw attention to.
+
+Primary Text & Headlines:
+#1b175e – A deep, rich blue ideal for headings and primary text. It provides strong contrast against the light background.
+
+Secondary Accent/Hover Effects:
+#456096 – Use this for hover states, secondary buttons, or borders to add depth without overwhelming the design.
+
+Secondary Text/Subtle Details:
+#737589 – Great for subheadings, body text, or secondary details where you want less emphasis than the primary text.
+
+Additional Accents for Depth:
+#6b81b6 and #948cb1 – These can be sprinkled in for icons, background gradients, or accent areas where you need a softer touch that still fits within the blue family.
+
+Footer/Navigation or High-Contrast Sections:
+#13123a – This very dark blue works well as a footer or header background, ensuring that any text (preferably in a light color like white or #ebecf1) is legible.
+
+Supporting Shades:
+#43416d and #4f547b – These can be used in areas like card backgrounds, shadow effects, or as subtle separators to tie different sections together.
