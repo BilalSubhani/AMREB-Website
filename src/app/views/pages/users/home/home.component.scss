@@ -1,0 +1,45 @@
+// Font Family Variables
+$font-family-primary: 'Manrope', 'Noto Sans', sans-serif;
+
+// Root Container
+.design-root {
+  font-family: $font-family-primary;
+}
+
+// Hero Section Background
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), 
+                    url("https://lh3.googleusercontent.com/aida-public/AB6AXuBn4XJ139lQ6wA5q29LFASpm7o7lONJfKulNYiGsT_P7EGBCiVeKXMlFUNRzx6ekP84UYvjFd-RhtTBwhHi6MeZZPCLup02C-T0oZo724vpRXlVKhMMmrziCT3GTwxrzPWsfZveZOcMZ95y963IXS3nUaT6oqiku4CjjGqjER-eVC-0X1oyR_giBffeQrvcFtClqfDl4ueyYB9mSisi-YmoNk0MgE7sDmSsLBcOavbVfgHn4iMFlZ-H3J55Pm5s3Py4O6__EEW82J8b");
+}
+
+// Service Card Images
+.service-card {
+  &.buy {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDve6_xm70q402r8hSxfYTUg29B5Z3FuqKH_MJkZz6CvZbc6oZQIhZCOdCHIEsUQETF-62k2cx_Ac5wvSvk4BEMbGKbbaCd23VLgZ0UEeNY3UQzjjc-Fnr3mvJYFoTVywatUvP3s2CvKnNYwB0bAA33IwV4KMglPbdKde2WD9eV6VYkTQXxYKLYf7I3QT45_7-71NL7TW4fa_jp9V_Sv5ZOznXTTOKwfvPTV1eTBnZwZqohJtYkQcAMMC_QE2-Q3-4iMQh6cWC5g2uG");
+  }
+
+  &.rent {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDp-QJEeECl-e7F8UdBZRCI38v-UMg5AH4iKzzh2jLBLJ8bcKE43j5LLBJwBWhCsore0dymMSbArVQZ3zHtG53IPlFrh82-ZJFIAzaB1eBDPxO9vPojZs0lag6_d1j8-azaew2Q_y6UK-vgxiHO--CNA6IeucgJ2M3Fdng207KM2iJu_3dCmBpyNGrrdo45I_oNZbA_q8WHrJnositJB7Ufw0mkqpl79F2r2vtdOENMWNMWpto40pR3V7zK7Xvu3iUx4JNfAkq3XZdw");
+  }
+
+  &.sell {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCea_hFzy8NEOPROANMA0IQg1R20Eudi3ZgpfYfUy45tzgASNO1k-2NG8kzV_ejU1B8YxKPh5LNjK3hlYV_iqAtiaLM2_ygHy3wQbYZyNjt3u8KM9GSBwdlpUOlO6gl5kLuZ6q6tteWkq70sEjbxZQvS3v6QM-onByGiTy_JwMiif0JDPdxpW7opXHk1jURmNzduWnmLqlfzRCOKBRct_KRsuaoF519AONgOb7-xQ893tYeFJFUI1UZudG5GjeAZ5iGi2IrwwL2TbjV");
+  }
+
+  &.architecture {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzaOdF_xwUPkxzpMdmdBvqIBBgOmafCJfiwxukfjeqxYL1O8To3nj4dowlLZlXFt0vszLMSVvdiVA3WHWIOYfCb2z1TYjn4DtQmoOmlZDaWTr2h670mAQbSQnZW8HLhQYdOGNm1cppYJ0XCTVEL0WadlLWAthS2aipDYWgipO66pfxn7ei7ypvrHMCPS9UAIwkGQ-xol0CdgzlMgvCdPM4chWhIiMtpAUn5CkrHoQthsGhF_xrBuCidL1VwLoGBBG5QMWxqEyxR6qV");
+  }
+}
+
+// Mixins for common background properties
+@mixin background-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Apply background cover to service cards and hero
+.hero-section,
+.service-card {
+  @include background-cover;
+}
